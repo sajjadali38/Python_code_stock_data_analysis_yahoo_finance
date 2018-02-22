@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+form {
+  text-align: center;
+}
+</style>
+<div align ="center"  style = "margin: auto; width: 50%; border: 3px solid green; padding: 10px")>
+<body>
+    <h1 align="center">Data Analysis and Visualization</h1>
+    <p align="justify">This is a webpage for reading financial data from yahoo finance. In this page, the user can view the chart of the stock closing price for Corn, Gasoline and Nasdaq (01-January-2018 to 31-January-2018). In additions of the chart, this page can also display the average data for three days of the stock Corn, Gasoline and Nasdaq (29-01-2018 to 31-01-2018).</p>
+	<form action="{{ url_for('chart') }}" method="post">
+	<h3 align="center">Press the below button for chart visualization</h3>
+    <input type="submit" value="View chart">
+    <br>
+  	</form>
+     <br>
+    <form action="{{ url_for('my_form_post') }}" method="POST">
+    	<h3 align="center">Press the below button for data analysis of the three days</h3>
+    <input type="submit" value=" View Average data">
+	</form>
+
+ </div>
+</body>
+</html> 
+
